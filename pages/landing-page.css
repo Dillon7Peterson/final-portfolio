@@ -4,43 +4,100 @@ body {
 
 header {
   background-color: mediumseagreen;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
 }
+
  
 .logo {
-
+  grid-column: 1/2;
+  height: 150px;
+  width: 150px;
   
 }
 
-/* .nav-bar{
+.nav-bar{
+  grid-column: 2/4;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
-} */
+  align-items: flex-end;
 
-/* .navResume{
-  margin: 10px;
 
+}
+
+.innerNav{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* justify-content: space-evenly; */
+}
+
+.navHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+ 
+}
+
+.navResume{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+  
+  
 }
 
 .navAbout {
-  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+  
 }
 
 .navMyBlog {
-  margin: 10px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+  
 }
 
 .navContactMe{
-  margin: 10px;
-} */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+}
 
 
 .name-container {
   color: white;
   border: 2px solid white;
   border-radius: 25px;
-  padding: 2%;
  
 }
 
@@ -62,11 +119,6 @@ header {
   justify-content: center;
 }
 
-/* .myPicture {
-  border: 10px solid rgba(65, 168, 236, 0.822);
-} */
-
-
 
 
 .resume-section{
@@ -76,8 +128,9 @@ header {
   min-height: 250px;
   width: auto;
   background-color: mediumseagreen;
+  border-radius: 200px;
 }
- 
+
 .about-me-section {
   margin: 10px;
   grid-area: left-top;
@@ -85,22 +138,25 @@ header {
   min-height: 250px;
   width: auto;
   background-color: rgba(25, 129, 199, 0.507);
+  border-radius: 200px;
 }
 
 .my-blog-section {
   margin: 10px;
-   grid-area: left-bottom;
-    border: 1em solid rgba(25, 129, 199, 0.507);
-    min-height: 250px;
-    background-color: mediumseagreen;
+  grid-area: left-bottom;
+  border: 1em solid rgba(25, 129, 199, 0.507);
+  min-height: 250px;
+  background-color: mediumseagreen;
+  border-radius: 200px;
 }
- 
+
 .contact-me-section {
   margin: 10px;
   grid-area: right-bottom;
   border: 1em solid mediumseagreen;
   min-height: 250px;
   background-color: rgba(25, 129, 199, 0.507);
+  border-radius: 200px;
 }
 
 footer {
@@ -109,22 +165,20 @@ footer {
 
  
 
- 
+/*  
   button {
-    margin: 3% auto;
     width: 20%;
     height: 15%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     border-radius: 15px;
     background: transparent;
-    /* padding: 20px; */
-    /* padding-bottom: 5%; */
     text-align: center;
     color: white;
     letter-spacing: 16px;
     font-style: italic;
-  }
+  } 
+  */
 
 
   @media (max-width: 600px) {
