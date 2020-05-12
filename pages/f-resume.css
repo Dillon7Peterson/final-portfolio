@@ -1,0 +1,97 @@
+.parent-container{
+  height: 1500px;
+  display: grid;
+  grid-template-areas: 
+  'header header header header'
+  'aside main main main'
+  'aside main main main'
+  'aside main main main'
+  'aside main main main'
+  'aside section section section'
+  'aside section section section'
+  'footer footer footer footer';
+}
+
+header{
+  grid-area: header;
+  border: 3px solid black;
+}
+
+.main-content {
+  grid-area: main;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.upper{
+  height: 48%;
+  border: 2px solid red;
+  margin: .3em;
+}
+
+.lower {
+  height: 48%;
+  border: 2px solid red;
+  margin: .3em;
+
+}
+.side-bar {
+  grid-area: aside;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  border: 2px solid red;
+  margin: .3em;
+  height: 24%;
+  
+}
+
+.second {
+  border: 2px solid red;
+  margin: .3em;
+  height: 24%;
+  
+}
+
+.third {
+  border: 2px solid red;
+  margin: .3em;
+  height: 24%;
+  
+}
+
+.fourth {
+  border: 2px solid red;
+  margin: .3em;
+  height: 24%;
+
+}
+
+.secondary-content {
+  grid-area: section;
+  border: 3px solid black;
+  display: flex;
+}
+
+.lower-left {
+  border: 2px solid red;
+  margin: .3em;
+  width: 48%;
+
+}
+
+.lower-right {
+  border: 2px solid red;
+  margin: .3em;
+  width: 48%;
+
+}
+
+footer {
+  grid-area: footer;
+  border: 3px solid black;
+}

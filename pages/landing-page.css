@@ -1,0 +1,169 @@
+body {
+  background-color: rgb(48, 42, 42);
+}
+
+header {
+  background-color: mediumseagreen;
+}
+ 
+.logo {
+
+  
+}
+
+/* .nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+} */
+
+/* .navResume{
+  margin: 10px;
+
+}
+
+.navAbout {
+  margin: 10px;
+}
+
+.navMyBlog {
+  margin: 10px;
+
+}
+
+.navContactMe{
+  margin: 10px;
+} */
+
+
+.name-container {
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 2%;
+ 
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+  'main main'
+  'main main'
+  'left-top right-top'
+  'left-bottom right-bottom';
+
+
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .myPicture {
+  border: 10px solid rgba(65, 168, 236, 0.822);
+} */
+
+
+
+
+.resume-section{
+  margin: 10px;
+  grid-area: right-top;
+  border: 1em solid rgba(25, 129, 199, 0.507);
+  min-height: 250px;
+  width: auto;
+  background-color: mediumseagreen;
+}
+ 
+.about-me-section {
+  margin: 10px;
+  grid-area: left-top;
+  border: 1em solid mediumseagreen;
+  min-height: 250px;
+  width: auto;
+  background-color: rgba(25, 129, 199, 0.507);
+}
+
+.my-blog-section {
+  margin: 10px;
+   grid-area: left-bottom;
+    border: 1em solid rgba(25, 129, 199, 0.507);
+    min-height: 250px;
+    background-color: mediumseagreen;
+}
+ 
+.contact-me-section {
+  margin: 10px;
+  grid-area: right-bottom;
+  border: 1em solid mediumseagreen;
+  min-height: 250px;
+  background-color: rgba(25, 129, 199, 0.507);
+}
+
+footer {
+  border: 2px solid black;
+}
+
+ 
+
+ 
+  button {
+    margin: 3% auto;
+    width: 20%;
+    height: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 15px;
+    background: transparent;
+    /* padding: 20px; */
+    /* padding-bottom: 5%; */
+    text-align: center;
+    color: white;
+    letter-spacing: 16px;
+    font-style: italic;
+  }
+
+
+  @media (max-width: 600px) {
+
+    .container {
+      display: grid;
+      grid-template-areas: 
+      'main'
+      'main'
+      'left-top'
+      'right-top'
+      'left-bottom' 
+      'right-bottom';
+
+  }
+
+  .name-container {
+    color: white;
+    border: none;
+  }
+
+  footer {
+    color: white;
+    border: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  button {
+    /* margin: 3% auto; */
+    width: 20%;
+    height: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 15px; */
+    background: transparent;
+    text-align: center;
+    color: white;
+    /* letter-spacing: 16px; */
+    font-style: italic;
+  }
+
+}
