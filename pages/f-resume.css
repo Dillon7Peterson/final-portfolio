@@ -1,4 +1,5 @@
 .parent-container{
+  background-color: rgb(58, 58, 59);
   height: 1500px;
   display: grid;
   grid-template-areas: 
@@ -79,7 +80,7 @@ header {
   
 }
 
-.navMyBlog {
+.navGallery {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,18 +108,23 @@ header {
   border: 3px solid black;
   display: flex;
   flex-direction: column;
+  border-radius: 30px;
 }
 
 .upper{
   height: 48%;
-  border: 2px solid red;
+  border: 10px solid mediumseagreen;
   margin: .3em;
+  background-color: rgba(25, 129, 199, 0.507);
+  border-radius: 30px;
 }
 
 .lower {
   height: 48%;
-  border: 2px solid red;
+  border: 10px solid mediumseagreen;
   margin: .3em;
+  background-color: rgba(25, 129, 199, 0.507);
+  border-radius: 30px;
 
 }
 .side-bar {
@@ -126,33 +132,38 @@ header {
   border: 3px solid black;
   display: flex;
   flex-direction: column;
+  border-radius: 30px;
 }
 
 .first {
-  border: 2px solid red;
+  border: 10px solid white;
   margin: .3em;
   height: 24%;
+  border-radius: 30px;
   
 }
 
 .second {
-  border: 2px solid red;
+  border: 10px solid white;
   margin: .3em;
   height: 24%;
+  border-radius: 30px;
   
 }
 
 .third {
-  border: 2px solid red;
+  border: 10px solid white;
   margin: .3em;
   height: 24%;
+  border-radius: 30px;
   
 }
 
 .fourth {
-  border: 2px solid red;
+  border: 10px solid white;
   margin: .3em;
   height: 24%;
+  border-radius: 30px;
 
 }
 
@@ -160,19 +171,24 @@ header {
   grid-area: section;
   border: 3px solid black;
   display: flex;
+  border-radius: 30px;
 }
 
 .lower-left {
-  border: 2px solid red;
+  border: 10px solid rgba(25, 129, 199, 0.507);
   margin: .3em;
   width: 48%;
-
+  border-radius: 30px;
+  background-color: mediumseagreen;
+  
 }
 
 .lower-right {
-  border: 2px solid red;
+  border: 10px solid rgba(25, 129, 199, 0.507);
   margin: .3em;
   width: 48%;
+  border-radius: 30px;
+  background-color: mediumseagreen;
 
 }
 

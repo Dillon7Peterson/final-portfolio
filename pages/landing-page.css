@@ -70,7 +70,7 @@ header {
   
 }
 
-.navMyBlog {
+.navGallery {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,8 +96,6 @@ header {
 
 .name-container {
   color: white;
-  border: 2px solid white;
-  border-radius: 25px;
  
 }
 
@@ -115,8 +113,6 @@ header {
 .main {
   grid-area: main;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 
