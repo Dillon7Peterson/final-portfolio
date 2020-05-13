@@ -4,7 +4,93 @@ body {
 
 header {
   background-color: mediumseagreen;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+}
 
+ 
+.logo {
+  grid-column: 1/2;
+  height: 150px;
+  width: 150px;
+  
+}
+
+.nav-bar{
+  grid-column: 2/4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+
+}
+
+.innerNav{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* justify-content: space-evenly; */
+}
+
+.navHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+ 
+}
+
+.navResume{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+  
+  
+}
+
+.navAbout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+  
+}
+
+.navGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+  
+}
+
+.navContactMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
 }
 
 
@@ -16,8 +102,8 @@ header {
   'left-top right-top'
   'left-bottom right-bottom';
 
-
 }
+
 
 .main {
   grid-area: main;
@@ -109,4 +195,4 @@ footer {
 
 
 
-}
+} 

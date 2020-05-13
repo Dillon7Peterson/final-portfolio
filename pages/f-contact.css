@@ -1,0 +1,198 @@
+body {
+  background-color: rgb(48, 42, 42);
+}
+
+header {
+  background-color: mediumseagreen;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+}
+
+ 
+.logo {
+  grid-column: 1/2;
+  height: 150px;
+  width: 150px;
+  
+}
+
+.nav-bar{
+  grid-column: 2/4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+
+}
+
+.innerNav{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* justify-content: space-evenly; */
+}
+
+.navHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+ 
+}
+
+.navResume{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+  
+  
+}
+
+.navAbout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+  
+}
+
+.navGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+  
+}
+
+.navContactMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 4em;
+  height: 2.5em;
+  margin: 12px;
+  border-radius: 20px;
+}
+
+
+.container {
+  display: grid;
+  grid-template-areas: 
+  'main main'
+  'main main'
+  'left-top right-top'
+  'left-bottom right-bottom';
+
+
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+
+
+
+.reading-section{
+  margin: 10px;
+  grid-area: right-top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1em solid rgba(25, 129, 199, 0.507);
+  min-height: 250px;
+  width: auto;
+  background-color: mediumseagreen;
+  border-radius: 200px;
+
+}
+ 
+.health-section {
+  margin: 10px;
+  grid-area: left-top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1em solid mediumseagreen;
+  min-height: 250px;
+  width: auto;
+  background-color: rgba(25, 129, 199, 0.507);
+  border-radius: 200px;
+ 
+  
+}
+
+.food-section {
+  margin: 10px;
+   grid-area: left-bottom;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+    border: 1em solid rgba(25, 129, 199, 0.507);
+    min-height: 250px;
+    background-color: mediumseagreen;
+    border-radius: 200px;
+}
+ 
+.gaming-section {
+  margin: 10px;
+  grid-area: right-bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1em solid mediumseagreen;
+  min-height: 250px;
+  background-color: rgba(25, 129, 199, 0.507);
+  border-radius: 200px;
+}
+
+footer {
+  border: 2px solid black;
+}
+
+
+@media (max-width: 600px) {
+
+  .container {
+    display: grid;
+    grid-template-areas: 
+    'main'
+    'main'
+    'left-top'
+    'right-top'
+    'left-bottom' 
+    'right-bottom';
+
+}
+
+
+
+}
