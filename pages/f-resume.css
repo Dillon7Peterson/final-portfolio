@@ -18,6 +18,9 @@ header {
   grid-template-columns: 33% 34% 33%;
 }
 
+h2 {
+  color: white;
+}
  
 .logo {
   grid-column: 1/2;
@@ -146,12 +149,62 @@ header {
 .upper{
   height: 48%;
   border: 10px solid mediumseagreen;
-  margin: .3em;
+  margin: .2em;
   background-color: rgba(25, 129, 199, 0.507);
   border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.upper-left {
+  border-right: 1px solid white;
+  width: 50%;
+  margin: .2em;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myPic {
+  height: 75%;
+  width: 60%;
+}
+
+.upper-right {
+  border-left: 1px solid white;
+  padding-top: 1em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  line-height: 2.0;
+
+}
+
+.profile-head {
+  font-size: 30px;
+  justify-content: center;
+  border-bottom: 2px solid white;
+}
+
+.profile-content {
+  margin: .5em;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+
+
+}
+
+.profile-content p {
+  color: white;
 }
 
 .lower {
+  display: flex;
+  flex-direction: column;
   height: 48%;
   border: 10px solid mediumseagreen;
   margin: .3em;
@@ -159,6 +212,40 @@ header {
   border-radius: 30px;
 
 }
+
+.Experience {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.experience-text {
+  font-size: 30px;
+  border-bottom: 2px solid white;
+}
+
+
+.work-container {
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.column-lower {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 30px;
+  width: 33%;
+
+}
+
+
+
+
+
 .side-bar {
   grid-area: aside;
   border: 3px solid black;
@@ -168,32 +255,67 @@ header {
 }
 
 .first {
-  border: 10px solid white;
-  margin: .3em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: .2em;
   height: 24%;
   border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   
+}
+
+.first-head {
+  padding-top: 5%;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+}
+
+.first-text {
+  color: white;
+  padding: 10px;
 }
 
 .second {
-  border: 10px solid white;
-  margin: .3em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: .2em;
   height: 24%;
   border-radius: 30px;
-  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.pt-cert {
+  padding-top: 5%;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+}
+
+.cert-list {
+  padding: 10px;
+}
+
+li {
+  color: white;
 }
 
 .third {
-  border: 10px solid white;
-  margin: .3em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: .2em;
   height: 24%;
   border-radius: 30px;
   
 }
 
 .fourth {
-  border: 10px solid white;
-  margin: .3em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: .2em;
   height: 24%;
   border-radius: 30px;
 
@@ -224,7 +346,20 @@ header {
 
 }
 
-footer {
+/* footer {
   grid-area: footer;
-  border: 3px solid black;
+  height: 40px;
+  width: 100%;
+  border: 3px solid white;
 }
+
+.thumbContainer {
+  border: 2px solid white;
+}
+
+.facebookBtn {
+  height: 25px;
+  width: 25px;
+  border: 2px solid white;
+  color: white;
+} */
