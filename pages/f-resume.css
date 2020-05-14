@@ -169,6 +169,7 @@ h2 {
 .myPic {
   height: 75%;
   width: 60%;
+  border-radius: 30px;
 }
 
 .upper-right {
@@ -309,7 +310,22 @@ li {
   margin: .2em;
   height: 24%;
   border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   
+}
+
+.third-head {
+  padding-top: 5%;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+}
+
+.third-text {
+  color: white;
+  padding: 10px;
+  line-height: 2.0;
 }
 
 .fourth {
@@ -318,7 +334,26 @@ li {
   margin: .2em;
   height: 24%;
   border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
+}
+
+.fourth-head {
+  padding-top: 5%;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+}
+
+.fourth-text {
+   display: flex;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 30px;
+  height: 200px;
+  color: white;
+  padding: 10px;
 }
 
 .secondary-content {
