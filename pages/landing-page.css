@@ -1,4 +1,5 @@
 body {
+  height: 1000px;
   background-color: rgb(48, 42, 42);
 }
 
@@ -134,71 +135,59 @@ header {
 }
 
 .container {
+  height: 100%;
   display: grid;
   grid-template-areas: 
+  'top top'
   'main main'
-  'main main'
-  'left-top right-top'
-  'left-bottom right-bottom';
+  'main main';
 
 
 }
 
 .main {
   grid-area: main;
+  background-image: url(../projectImages/Pondering\ Lake\ Cora.JPG);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 30px;
+
+}
+
+
+.top {
+  grid-area: top;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 25px;
+  background-color: rgb(48, 42, 42);
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-.resume-section{
-  margin: 10px;
-  grid-area: right-top;
-  border: 1em solid rgba(25, 129, 199, 0.507);
-  min-height: 250px;
-  width: auto;
-  background-color: mediumseagreen;
-  border-radius: 200px;
+.name-container {
+  font-size: 30px;
+  color: white;
 }
 
-.about-me-section {
-  margin: 10px;
-  grid-area: left-top;
-  border: 1em solid mediumseagreen;
-  min-height: 250px;
-  width: auto;
-  background-color: rgba(25, 129, 199, 0.507);
-  border-radius: 200px;
-}
-
-.my-blog-section {
+/* .left-bottom {
   margin: 10px;
   grid-area: left-bottom;
   border: 1em solid rgba(25, 129, 199, 0.507);
-  min-height: 250px;
   background-color: mediumseagreen;
-  border-radius: 200px;
-}
+} */
 
-.contact-me-section {
+/* .right-bottom {
   margin: 10px;
   grid-area: right-bottom;
   border: 1em solid mediumseagreen;
-  min-height: 250px;
   background-color: rgba(25, 129, 199, 0.507);
-  border-radius: 200px;
-}
-
-footer {
-  height: 125px;
-  width: 100%;
-  border: 3px solid white;
-  background-color: rgb(48, 42, 42);
-}
-
-.thumbContainer {
-  border: 2px solid white;
-}
+  
+} */
 
 
  

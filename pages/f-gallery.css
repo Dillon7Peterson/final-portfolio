@@ -145,7 +145,7 @@ header {
   flex-direction: column;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  background-color: mediumseagreen;
+  background-color: rgba(25, 129, 199, 0.507);
   border-radius: 30px;
   margin: .7em;
 }
@@ -266,6 +266,7 @@ a{
   flex-direction: column;
   justify-content: center;
   border-radius: 30px;
+  background-color: mediumseagreen;
 }
 
 .bottom-left-body a{
