@@ -130,86 +130,114 @@ header {
 .container {
   display: grid;
   grid-template-areas: 
-  'main main'
-  'main main'
-  'left-top right-top'
-  'left-bottom right-bottom';
+  'top right'
+  'center right';
 
 
 }
 
-.main {
-  grid-area: main;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+.right-side {
+  grid-area: right;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  height: 100%;
+  background-color: rgb(48, 42, 42);
+  border-radius: 25px;
 }
 
 
-
-
-
-.reading-section{
-  margin: 10px;
-  grid-area: right-top;
+.top{
+  min-height: 200px;
+  margin: 25px;
+  grid-area: top;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-  border: 1em solid rgba(25, 129, 199, 0.507);
-  min-height: 250px;
-  width: auto;
-  background-color: mediumseagreen;
-  border-radius: 200px;
+  border-radius: 25px;
+  border: 2px solid mediumseagreen;
+  background-color: rgba(25, 129, 199, 0.507);
+
+}
+
+.top h2 {
+  margin: 15px;
 
 }
  
-.health-section {
-  margin: 10px;
-  grid-area: left-top;
+.center {
+  min-height: 200px;
+  margin: 25px;
+  grid-area: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   color: white;
-  border: 1em solid mediumseagreen;
-  min-height: 250px;
-  width: auto;
+  border-radius: 25px;
+  border: 2px solid mediumseagreen;
   background-color: rgba(25, 129, 199, 0.507);
-  border-radius: 200px;
  
   
 }
 
-.food-section {
-  margin: 10px;
-   grid-area: left-bottom;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   color: white;
-    border: 1em solid rgba(25, 129, 199, 0.507);
-    min-height: 250px;
-    background-color: mediumseagreen;
-    border-radius: 200px;
-}
- 
-.gaming-section {
-  margin: 10px;
-  grid-area: right-bottom;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  border: 1em solid mediumseagreen;
-  min-height: 250px;
-  background-color: rgba(25, 129, 199, 0.507);
-  border-radius: 200px;
+.center h2 {
+  margin-bottom: 25px;
 }
 
-footer {
-  border: 2px solid black;
+.social-media-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
+.instagram-img {
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../projectImages/instagram-thumbnail.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+}
+
+.twitter-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background-image: url(../projectImages/Twitter-Thumbnail.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.facebook-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background-image: url(../projectImages/facebook\ thumbnail.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.linkedin-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background-image: url(../projectImages/LinkedIn\ Thumbnail.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 
 
 @media (max-width: 600px) {
@@ -217,12 +245,9 @@ footer {
   .container {
     display: grid;
     grid-template-areas: 
-    'main'
-    'main'
-    'left-top'
-    'right-top'
-    'left-bottom' 
-    'right-bottom';
+      'top'
+      'center'
+      'right';
 
 }
 

@@ -1,6 +1,6 @@
 
 body {
-  height: 1200px;
+  height: 100%;
   background-color: rgb(58, 58, 59);
 }
 
@@ -129,628 +129,162 @@ header {
 }
 
 
-main {
+.container {
   height: inherit;
   display: grid;
   grid-template-areas: 
-  'left top top'
-  'left top top'
-  'left center right'
-  'bottom bottom right'
-  'bottom bottom right';
+  '. top top .'
+  '. b-left b-left .';
   margin: 10px;
   
 }
 
-.main-top {
+.top {
   grid-area: top;
-   display: flex;
-     flex-direction: row;
-   background-color: mediumseagreen;
-  margin: .2em;
-  
-}
-
-.top-center-img {
-  display: block;
-   width: 50%;
-     height: auto;
-       margin: .2em;
-  /* background-image: url(./imagesForGallery/moonOverSun-unsplash.jpg); */
-     background-size: 100%;
-   background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid white;
-  
-}
-
-.right-img-one {
-  justify-content: end;
-  width: 50%;
-  margin: .2em;
-  /* background-image: url(./imagesForGallery/wood-unsplash.jpg); */
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid white;
-}
-
-
-.main-left {
-  grid-area: left;
-  height: auto;
-  background-color: rgba(25, 129, 199, 0.507);   
-} 
-
-
-.left-img-one {
-  display: block;
-  height: 30%;
-  margin: .5em;
-  /* background-image: url(./imagesForGallery/waterTwo-unsplash.jpg); */
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top;
-  border: 2px solid white;
-}
-
-
-.left-img-two {
-  display: block;
-  height: 32%;
-  margin: .5em;
-  /* background-image: url(./imagesForGallery/waterTwo-unsplash.jpg); */
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid white;
-  
-}
-
-.left-img-three {
-  display: block;
-  height: 32%;
-  margin: .5em;
-  /* background-image: url(./imagesForGallery/waterTwo-unsplash.jpg); */
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  border: 2px solid white;
-  
-}
-
-.main-center {
-  grid-area: center;
-  border: 10px solid mediumseagreen;
-  background-color: rgb(58, 58, 59);
-  
-}
-
-.main-right{
-  margin: .2em;
-  grid-area: right;
-  border: 2px solid black;
-  background-color: rgba(25, 129, 199, 0.507);
-}
-
-.right-img-two {
-  height: 30%;
-  margin: .5em;
-  /* background-image: url(./imagesForGallery/fireThree-unsplash.jpg); */
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top;
-  border: 2px solid white;
-  
-  
-}
-
-.right-img-three {
-  height: 32%;
-  margin: .5em;
-  /* background-image: url(./imagesForGallery/fireThree-unsplash.jpg); */
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid white;
-}
-
-.right-img-four {
-  height: 32%;
-  margin: .5em;
-  /* background-image: url(./imagesForGallery/fireThree-unsplash.jpg); */
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  border: 2px solid white;
-}
-
-.main-bottom {
-  grid-area: bottom;
-  margin: .2em;
   display: flex;
-  flex-direction: row;
-  border: 2px solid black;
+  flex-direction: column;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   background-color: mediumseagreen;
-  
+  border-radius: 30px;
+  margin: .7em;
 }
 
-.left-img-four {
-  width: 50%;
-  margin: .2em;
-  /* background-image: url(./imagesForGallery/wind-unsplash.jpg); */
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid white;
-  
-}
-
-
-.bottom-center-img {
-  width: 50%;
-  margin: .2em;
-  /* background-image: url(./imagesForGallery/Earth-unsplash.jpg); */
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid white;
-  
-}
-/* 
-.overlay-eclipse { 
-  height: 100%;
-  width: 100%;
-    opacity: 0;
-    transition: 1s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .top-center-img:hover {
-    transition: ease 1s;
-    opacity: .5;
-    /* background-image: url(./imagesForGallery/moonOverSun-unsplash.jpg); 
-  
-  }
-
-  .top-center-img:hover .overlay-eclipse {
-    opacity: 1;
-    color: white;
-
-  }
-
-  .top-center-img:hover .overlay-eclipse .top-center-text{
-    font-size: 20px;
-  } */
-
-
-
-/* 
-.overlay-wood {  
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.right-img-one:hover {
-  transition: ease 1s;
-  opacity: .5;
-  background-image: url(./imagesForGallery/wood-unsplash.jpg);
-
-}
-
-.right-img-one:hover .overlay-wood {
-  opacity: 1;
+.top h2 {
   color: white;
-
-}
-
-.right-img-one:hover .overlay-wood .wood-text{
-  font-size: 20px;
-} */
-
-
-/* .overlay-topWater {  
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.left-img-one:hover {
-  transition: ease 1s;
-  opacity: .5;
-  background-image: url(./imagesForGallery/waterTwo-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: top;
-
-}
-
-.left-img-one:hover .overlay-topWater {
-  opacity: 1;
-  color: white;
-
-}
-
-.left-img-one:hover .overlay-topWater .topWater-text{
-  font-size: 20px;
-} */
-
-
-/* 
-.overlay-midWater {  
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.left-img-two:hover {
-  transition: ease 1s;
-  opacity: .5;
-  background-image: url(./imagesForGallery/waterTwo-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
-
-.left-img-two:hover .overlay-midWater {
-  opacity: 1;
-  color: white;
-
-}
-
-.left-img-two:hover .overlay-midWater .midWater-text{
-  font-size: 20px;
-} */
-
-
-/* .overlay-bottomWater {  
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.left-img-three:hover {
-  transition: ease 1s;
-  opacity: .5;
-  background-image: url(./imagesForGallery/waterTwo-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-
-}
-
-.left-img-three:hover .overlay-bottomWater{
-  opacity: 1;
-  color: white;
-
-}
-
-.left-img-three:hover .overlay-bottomWater .bottomWater-text{
-  font-size: 20px;
-} */
-
-
-/* .overlay-topFire {  
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.right-img-two:hover {
-  transition: ease 1s;
-  opacity: .5;  background-image: url(./imagesForGallery/fireThree-unsplash.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top;
-
-
-}
-
-.right-img-two:hover .overlay-topFire{
-  opacity: 1;
-  color: white;
-
-}
-
-.right-img-two:hover .overlay-topFire .topFire-text{
-  font-size: 20px;
-} */
-
-
-
-/* .overlay-midFire {  
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.right-img-three:hover {
-  transition: ease 1s;
-  opacity: .5;
-  background-image: url(./imagesForGallery/fireThree-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
-
-.right-img-three:hover .overlay-midFire{
-  opacity: 1;
-  color: white;
-
-}
-
-.right-img-three:hover .overlay-midFire .midFire-text{
-  font-size: 20px;
-} */
-
-
-
-/* .overlay-bottomFire {  
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.right-img-four:hover {
-  transition: ease 1s;
-  opacity: .5;
-  background-image: url(./imagesForGallery/fireThree-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-
-}
-
-.right-img-four:hover .overlay-bottomFire{
-  opacity: 1;
-  color: white;
-
-}
-
-.right-img-four:hover .overlay-bottomFire .bottomFire-text{
-  font-size: 20px;
-} */
-
-
-/* 
-.overlay-wind {  
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay-wind .wind-text{
-  display: none;
-}
-
-.left-img-four:hover {
-  transition: ease 1s;
-  opacity: .5;
-  background-image: url(./imagesForGallery/wind-unsplash.jpg);
-
-}
-
-.left-img-four .overlay-wind {
-  opacity: 1;
-  color: white;
-
-}
-
-.left-img-four:hover .overlay-wind .wind-text{
-  display: block;
   font-size: 25px;
-} */
+}
 
-
-/* .overlay-earth {  
-  height: 100%;
+.top-title{
   width: 100%;
-  opacity: 0;
-  transition: 1s ease;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.thumbnail-container {
+  height: 75%;
+  background-color: mediumseagreen;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  border-radius: 30px;
+}
+
+.thumb-1 {
+  background-color: rgb(58, 58, 59);
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.thumb-2 {
+  background-color: rgb(58, 58, 59);
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  
+}
+
+.thumb-3 {
+  background-color: rgb(58, 58, 59);
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  
+}
+
+.thumb-4 {
+  background-color: rgb(58, 58, 59);
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 30px;
+
+}
+
+a{
+  color: white;
+}
+
+.bottom-left {
+  grid-area: b-left;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  background-color: rgba(25, 129, 199, 0.507);
+  border-radius: 30px;
+  margin: .7em;
+}
+
+.bottom-left-title{
+  width: 100%;
+  height: 25%;
+  border: 1px solid white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.bottom-left-title h2 {
+  color: white;
+  font-size: 25px;
+}
+
+.bottom-left-body {
+  height: 75%;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.bottom-left-body a{
+  height: 30px;
+  border: 1px solid white;
+  background-color: rgb(58, 58, 59);
+  color: white;
+  border-radius: 30px;
+  margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.overlay-earth .earth-text{
-  display: none;
-}
-
-.bottom-center-img:hover {
-  transition: ease 1s;
-  opacity: .5;
-  background-image: url(./imagesForGallery/Earth-unsplash.jpg);
-
-}
-
-.bottom-center-img .overlay-earth {
-  opacity: 1;
-  color: white;
-
-}
-
-.bottom-center-img:hover .overlay-earth .earth-text{
-  display: block;
-  font-size: 25px;
+/* .bottom-right {
+  grid-area: b-right;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  background-color: rgba(25, 129, 199, 0.507);
+  border-radius: 30px;
+  margin: .7em;
 } */
-
-@media (max-width: 768px) {
-  main {
-    display: grid;
-    grid-template-areas: 
-    'left top'
-    'left top'
-    'left right'
-    'bottom right'
-    'bottom right';
-    
-  }
-
-  .main-top {
-    grid-area: top;
-    display: flex;
-    flex-direction: column;
-    background-color: mediumseagreen;
-  
-    }
-
-    .top-center-img {
-      display: block;
-      width: 100%;
-      height: 50%;
-      margin: .2em;
-      /* background-image: url(./imagesForGallery/moonOverSun-unsplash.jpg); */
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: scroll;
-      
-    }
-
-    .right-img-one {
-      width: 100%;
-      height: 50%;
-      margin: .2em;
-      /* background-image: url(./imagesForGallery/wood-unsplash.jpg); */
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .main-bottom {
-      grid-area: bottom;
-      margin: .2em;
-      display: flex;
-      flex-direction: column;
-      background-color: mediumseagreen;
-     
-    }
-    
-    .left-img-four {
-        width: 100%;
-        height: 50%;
-        margin: .2em;
-        /* background-image: url(./imagesForGallery/wind-unsplash.jpg); */
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-    
-    }
-
-    .bottom-center-img {
-      width: 100%;
-      height: 50%;
-      margin: .2em;
-      /* background-image: url(./imagesForGallery/Earth-unsplash.jpg); */
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-    
-  }
-
-}
-
-@media (max-width: 420px) {
-
-  main {
-    height: 1200px;
-    display: grid;
-    grid-template-areas: 
-    'top'
-    'left'
-    'center'
-    'bottom'
-    'right';
-    
-  }
-
-  .main-top {
-    grid-area: top;
-    display: flex;
-    flex-direction: column;
-    background-color: mediumseagreen;
-  
-    }
-
-    .top-center-img {
-      display: block;
-      width: 100%;
-      margin: .2em;
-      /* background-image: url(./imagesForGallery/moonOverSun-unsplash.jpg); */
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      
-    }
-
-    .right-img-one {
-      width: 100%;
-      margin: .2em;
-      /* background-image: url(./imagesForGallery/wood-unsplash.jpg); */
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .main-bottom {
-      grid-area: bottom;
-      margin: .2em;
-      display: flex;
-      flex-direction: column;
-      background-color: mediumseagreen;
-     
-    }
-    
-    .left-img-four {
-        width: 100%;
-        margin: .2em;
-        /* background-image: url(./imagesForGallery/wind-unsplash.jpg); */
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-    
-    }
-
-    .bottom-center-img {
-      width: 100%;
-      margin: .2em;
-      /* background-image: url(./imagesForGallery/Earth-unsplash.jpg); */
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-    
-  }
-
-}
