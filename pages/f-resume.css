@@ -1,6 +1,6 @@
 .parent-container{
   background-color: rgb(58, 58, 59);
-  height: 1500px;
+  height: auto;
   display: grid;
   grid-template-areas: 
   'aside main main main'
@@ -8,8 +8,7 @@
   'aside main main main'
   'aside main main main'
   'aside section section section'
-  'aside section section section'
-  'footer footer footer footer';
+  'aside section section section';
 }
 
 header {
@@ -180,21 +179,21 @@ h2 {
   flex-direction: column;
   align-items: center;
   border-radius: 30px;
-  line-height: 2.0;
+  line-height: 1.5;
 
 }
 
 .profile-head {
-  font-size: 30px;
+  font-size: 20px;
   justify-content: center;
   border-bottom: 2px solid white;
 }
 
 .profile-content {
-  margin: .5em;
+  margin: .2em;
   justify-content: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%;
+  padding-right: 5%; */
 
 
 }
@@ -240,6 +239,9 @@ h2 {
   border-bottom: 1px solid white;
   border-radius: 30px;
   width: 33%;
+  color: white;
+  line-height: 1.5;
+  padding: 15px;
 
 }
 
@@ -325,7 +327,7 @@ li {
 .third-text {
   color: white;
   padding: 10px;
-  line-height: 2.0;
+  line-height: 1.5;
 }
 
 .fourth {
@@ -369,6 +371,10 @@ li {
   width: 48%;
   border-radius: 30px;
   background-color: mediumseagreen;
+  color: white;
+  line-height: 1.5;
+  
+
   
 }
 
@@ -378,23 +384,37 @@ li {
   width: 48%;
   border-radius: 30px;
   background-color: mediumseagreen;
-
-}
-
-/* footer {
-  grid-area: footer;
-  height: 40px;
-  width: 100%;
-  border: 3px solid white;
-}
-
-.thumbContainer {
-  border: 2px solid white;
-}
-
-.facebookBtn {
-  height: 25px;
-  width: 25px;
-  border: 2px solid white;
   color: white;
-} */
+  justify-content: center;
+
+}
+
+@media (max-width: 1080px) {
+  .parent-container {
+    display: grid;
+    grid-template-areas: 
+    'main main main'
+    'main main main'
+    'main main main'
+    'section section section'
+    'section section section'
+    'aside aside aside'
+    'aside aside aside';
+
+}
+
+@media (max-width: 600px) {
+ .parent-container {
+  display: grid;
+  grid-template-areas: 
+  'main main'
+  'main main'
+  'main main'
+  'main main'
+  'aside aside'
+  'aside aside'
+  'section section'
+  'section section';
+}
+}
+

@@ -161,7 +161,7 @@ header {
   min-height: 250px;
   width: auto;
   background-color: mediumseagreen;
-  border-radius: 200px;
+  border-radius: 30px;
 
 }
  
@@ -176,7 +176,7 @@ header {
   min-height: 250px;
   width: auto;
   background-color: rgba(25, 129, 199, 0.507);
-  border-radius: 200px;
+  border-radius: 30px;
  
   
 }
@@ -191,7 +191,7 @@ header {
     border: 1em solid rgba(25, 129, 199, 0.507);
     min-height: 250px;
     background-color: mediumseagreen;
-    border-radius: 200px;
+    border-radius: 30px;
 }
  
 .gaming-section {
@@ -204,7 +204,7 @@ header {
   border: 1em solid mediumseagreen;
   min-height: 250px;
   background-color: rgba(25, 129, 199, 0.507);
-  border-radius: 200px;
+  border-radius: 30px;
 }
 
 footer {
